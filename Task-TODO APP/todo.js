@@ -16,32 +16,41 @@ if(objStr != null)
 
 displayInfo();
 
+
+
 addUserBtn.onclick = () => {
-
-    const name = usernameTextField.value;
-
-    if(edit_id != null)
-    {
-        //edit
-        userArray.splice(edit_id,1,{'name':name});
-        edit_id = null;
+    if(usernameTextField.value != ""){
+        const name = usernameTextField.value;
+    
+        if(edit_id != null)
+        {
+            //edit
+            userArray.splice(edit_id,1,{'name':name});
+            edit_id = null;
+        }
+        else{
+            //insert
+            userArray.push({'name':name});
+        }
+            
+       saveInfo(userArray);
+       usernameTextField.value = '';
+       addUserBtn.innerText = btnText;
+    
     }
     else{
-        //insert
-        userArray.push({'name':name});
+        alert("Enter a User Name To Add In List")
     }
-        
-   saveInfo(userArray);
-   usernameTextField.value = '';
-    addUserBtn.innerText = btnText;
+   
+}
 
-};
 
 function saveInfo(userArray){
     let str = JSON.stringify(userArray);
     localStorage.setItem('users',str);
     displayInfo();
 }
+
 
 function displayInfo(){
     let statement = '';
