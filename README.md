@@ -1,5 +1,10 @@
 # Octanet Web Development Internship 
 
+# Certificate 
+
+![octanet-certificate](https://github.com/user-attachments/assets/c0f7d92c-cdff-48e1-ad9d-83d766a2e954)
+
+
 # Task 1 :  Basic Food Corner Landing Page
 <b>Description:</b>
 This project is a simple and aesthetically pleasing landing page for a hypothetical food corner. 
