@@ -2,7 +2,8 @@
 
 # Certificate 
 
-![octanet-certificate](https://github.com/user-attachments/assets/c0f7d92c-cdff-48e1-ad9d-83d766a2e954)
+![octanet-certificate](https://github.com/user-attachments/assets/59cd0b9e-800f-4b75-9daf-5d9309999460)
+
 
 
 # Task 1 :  Basic Food Corner Landing Page
